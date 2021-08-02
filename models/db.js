@@ -2,7 +2,7 @@
 const Sequelize = require("sequelize");
 
 //Database
-const sequelize = new Sequelize("project_anime_db", "root", "icasa12345", {
+const sequelize = new Sequelize("project_anime_db", "root", "admin", {
     host: "localhost",
     dialect: "mysql"
 })
