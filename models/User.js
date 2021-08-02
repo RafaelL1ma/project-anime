@@ -10,11 +10,11 @@ const User = db.sequelize.define("User", {
     password: {
         type: db.Sequelize.STRING
     },
-    email:{
+    email: {
         type: db.Sequelize.STRING
     }
 })
 
 module.exports = User;
 
-//User.sync({force: true});
+//User.sync({ force: true });

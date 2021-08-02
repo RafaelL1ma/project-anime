@@ -1,0 +1,18 @@
+<h1>Lista de Usuários</h1>
+<a href="/new-user"><button>Cadastrar usuários</button></a>
+<table border="1px">
+    <tr>
+        <td>Nome</td>
+        <td>Nome de usuário</td>
+        <td>E-mail</td>
+        <td>Ações</td>
+    </tr>
+{{#each user}}
+    <tr>
+        <td>{{dataValues.name}}</td>
+        <td>{{dataValues.userName}}</td>
+        <td>{{dataValues.email}}</td>
+        <td><a href="/delete/{{dataValues.id}}"><button>Deletar</button></a></td>
+    </tr>
+{{/each}}
+</table>
