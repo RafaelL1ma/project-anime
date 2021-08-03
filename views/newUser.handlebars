@@ -1,15 +1,23 @@
-<form action="/new-user" method="post">
-    <p>Nome: </p>
-    <input type="text" name="name">
-    
-    <p>E-mail: </p>
-    <input type="email" name="email">
-    
-    <p>Nome de Usuário: </p>
-    <input type="text" name="userName">
-    
-    <p>Senha: </p>
-    <input type="password" name="password">
-    
-    <p><button type="submit">Enviar</button></p>
-</form>
+    <div id="form.user" class="container">
+        <form  action="/new-user" method="post">
+            <div class="row">
+                <label for="">Nome: </label>
+                <input type="text" name="name">
+            </div>
+            <div class="row">
+                <label for="">E-mail: </label>
+                <input type="email" name="email">
+            </div>  
+            <div class="row">
+                <label for="">Nome de usuário: </label>
+                <input type="text" name="userName">
+            </div>
+            <div class="row">  
+                <label for="">Senha: </label>
+                <input type="password" name="password">
+            </div>  
+            <div class="row">   
+                <p><button type="submit">Enviar</button></p>
+            </div>  
+    </form>
+</div>

@@ -1,0 +1,17 @@
+#form.user {
+  /* Rectangle 74 */
+  position: absolute;
+  width: 1225px;
+  height: 868px;
+  left: 455px;
+  top: 158px;
+
+  /* mono/dark-grayish */
+
+  background: #495057;
+  border-radius: 10px;
+}
+
+body {
+  background: #495057;
+}
