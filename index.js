@@ -19,6 +19,7 @@ app.get("/list-anime", function (req, res) {
     res.render('listAnime');
 });
 
+//CRUD de usuário
 app.get("/new-user", function (req, res) {
     res.render("newUser");
 })
@@ -42,13 +43,29 @@ app.get("/list-user", function (req, res) {
     })
 })
 
-app.get("/delete/:id", function (req, res) {
-    User.destroy({ where: { "id": req.params.id } }).then(function () {
+app.get("/delete-user/:id", function (req, res) {
+    User.destroy({ where: {"id": req.params.id } }).then(function () {
         res.redirect("/list-user");
     }).catch(function () {
         res.send("Usuário já deletado ou inexistente!");
     })
 })
+
+/*app.get("/update-user/:id", function (req, res) {
+    User.findAll({ where: {"id": req.params.id}}).then(function (user) {
+        res.render("updateUser", { user: user });
+    }).catch(function () {
+        res.send("Usuário não encontrado!")
+    })
+})
+
+app.post("/update-user/:id", function(req, res) {
+    User.update({ where: { "id": req.params.id }}).then(function () {
+        res.redirect("/list-user");
+    }).catch(function () {
+        res.send("Usuário inexistente!")
+    })
+})*/
 
 app.listen("8080", function () {
     console.log("Conexão estabelecida");
